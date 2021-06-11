@@ -7,6 +7,8 @@ b = 0.2
 c = 0.08
 city = True
 forrest = True
+choices_city = ["ally", "right", "left", "knife", "gun", "voice", "room", "paper", "building", "street"]
+choices_forrest = ["night","day", "foot print", "follow","lake", "fairy"]
 
 name = input("Please type your name: ").upper()
 time.sleep(a)
@@ -247,10 +249,10 @@ if answer == "city":
             break
 
 
-        elif answer != "ally" or "right" or "left" or "knife" or "gun" or "voice" or "room" or "paper" or "building" or "street":
+        elif answer not in choices_city:
             print(" That is not a choice please try again. ")
-            city = False
-            break
+            continue
+            
         
 
 elif answer == "forrest":
@@ -365,10 +367,10 @@ elif answer == "forrest":
             break
 
 
-        elif answer != "night" or "day" or "foot print" or "follow" or "lake" or "fairy":
+        elif answer not in choices_forrest:
             print(" That is not a choice. You Lose The Game ")
             forrest = False
-            break
+            continue
 
 elif answer == "quit":
     print(" Thank you starting the journey {}, we do hope you come back and try again.".format(name))
