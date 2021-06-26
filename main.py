@@ -32,7 +32,7 @@ print("")
  
 time.sleep(a)
 
-answer = input(" Would you like to play in the a mystical forrest or in a dense city.\n Type city or forrest: ")
+answer = input(" Would you like to play in the a mystical forrest or in a dense city.\n Type city or forrest: ").lower()
 
 
 if answer == "city":
