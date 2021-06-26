@@ -6,9 +6,9 @@ a = 2
 b = 0.2
 c = 0.08
 city = True
-forrest = True
+forest = True
 choices_city = ["ally", "right", "left", "knife", "gun", "voice", "room", "paper", "building", "street"]
-choices_forrest = ["night","day", "foot print", "follow","lake", "fairy"]
+choices_forest = ["night","day", "foot print", "follow","lake", "fairy"]
 
 name = input("Please type your name: ").upper()
 time.sleep(a)
@@ -32,7 +32,7 @@ print("")
  
 time.sleep(a)
 
-answer = input(" Would you like to play in the a mystical forrest or in a dense city.\n Type city or forrest: ").lower()
+answer = input(" Would you like to play in the a mystical forest or in a dense city.\n Type city or forest: ").lower()
 
 
 if answer == "city":
@@ -255,21 +255,21 @@ if answer == "city":
             
         
 
-elif answer == "forrest":
+elif answer == "forest":
 
-    while forrest:
-        print(" Welcome {}, to the magical mystical forrest were nothing is as it seems".format(name))
+    while forest:
+        print(" Welcome {}, to the magical mystical forest were nothing is as it seems".format(name))
         time.sleep(a)
-        print(" How you got to the forrest is unknown and how to leave the forrest is even more of a mystery.\n")
+        print(" How you got to the forest is unknown and how to leave the forest is even more of a mystery.\n")
         time.sleep(a)
         print(" Time for your first choice of the game weather it is day or night. Be aware the time of day may or maynot affect the creatures you run into")
         time.sleep(a)
-        answer = input(" Type 'Day' or Type 'Night' to choose when you entered the forrest:\n ").lower()
+        answer = input(" Type 'Day' or Type 'Night' to choose when you entered the forest:\n ").lower()
         clear_output()
 
 
         if answer == "day":
-            print(" As you walk through the thick lush forrest you noticed all the pretty flowers, the lovely smell of a fresh rain.")
+            print(" As you walk through the thick lush forest you noticed all the pretty flowers, the lovely smell of a fresh rain.")
             time.sleep(a)
             print(" You also notice what looks to be a weird shaped foot print in the wet dirt.")
             time.sleep(a)
@@ -301,10 +301,10 @@ elif answer == "forrest":
                  time.sleep(a)
                  print(" The note read: ")
                  time.sleep(a)
-                 print(" Because you did not let the fairy lead you aware deeper into my forrest you can keep this pot of gold.")
+                 print(" Because you did not let the fairy lead you aware deeper into my forest you can keep this pot of gold.")
                  time.sleep(a)
                  print(" YOU HAVE WON THE GAME.")
-                 forrest = False
+                 forest = False
                  break
 
                 elif answer == "follow":
@@ -318,7 +318,7 @@ elif answer == "forrest":
                     time.sleep(a)
                     print(" The dragon says to you: ")
                     time.sleep(3)
-                    print(".... How dare you follow my fairy into my forrest. You have come to far stranger.")
+                    print(".... How dare you follow my fairy into my forest. You have come to far stranger.")
                     time.sleep(a)
                     print(" The dragon then leans in and swallows you in one bite.")
                     time.sleep(a)
@@ -328,7 +328,7 @@ elif answer == "forrest":
                     print(" YOU HAVE LOST THE GAME!!")
                     print(" GAME OVER")
 
-                    forrest = False
+                    forest = False
                     break
         
             if answer == "foot print":
@@ -342,11 +342,11 @@ elif answer == "forrest":
                 time.sleep(a)
                 print(" GAME OVER!!!")
 
-                forrest = False
+                forest = False
                 break
 
         if answer == "night":
-            print(" Why would anyone want to be in a spooky forrest at night. ")
+            print(" Why would anyone want to be in a spooky forest at night. ")
             time.sleep(a)
             print(" The first creature you see is a huge dragon.")
             time.sleep(a)
@@ -357,25 +357,25 @@ elif answer == "forrest":
             print(" YOU HAVE LOST THE GAME!!!")
             print(" GAME OVER!!!")
             
-            forrest = False
+            forest = False
             break
 
         
         if answer == "quit":
             print(" Thank you starting the journey {}, we do hope you come back and try again.".format(name))
-            forrest = False
+            forest = False
             break
 
 
-        elif answer not in choices_forrest:
+        elif answer not in choices_forest:
             print(" That is not a choice. You Lose The Game ")
-            forrest = False
+            forest = False
             continue
 
 elif answer == "quit":
     print(" Thank you starting the journey {}, we do hope you come back and try again.".format(name))
     city = False
-    forrest = False
+    forest = False
     
     
 
