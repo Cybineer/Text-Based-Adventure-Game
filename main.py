@@ -215,7 +215,8 @@ if answer == "city":
                 time.sleep(a)
                 print("GAME OVER....")
 
-                city = False                
+                city = False 
+                time.sleep(4)                
                 break
                 
 
@@ -239,12 +240,21 @@ if answer == "city":
                 print(" YOU HAVE SURVIVED THE GAME AND RECEIVED YOUR POT OF GOLD. ")
                 time.sleep(a)
                 print(" YOU HAVE WON THE GAME {}".format(name))
+                time.sleep(a)
+                print()
+                time.sleep(a)
+                print("GAME OVER....")
+
                 city  = False                
                 break
             
 
         elif answer == "quit":
             print(" Thank you starting the journey {}, we do hope you come back and try again.".format(name))
+            time.sleep(a)
+            print()
+            time.sleep(a)
+            print("GAME OVER....")
             city = False
             break
 
@@ -289,23 +299,27 @@ elif answer == "forest":
                 answer = input(" Type 'Follow' to follow the fairy or Type 'Lake' to head towards the lake: ").lower()
 
                 if answer == "lake":
-                 print(" You head towards the lake as fast as you can.")
-                 time.sleep(a)
-                 print(" You plunge your arm into the glowing water.")
-                 time.sleep(a)
-                 print(" Instantly your arm stops burning and you see a rope at the bottom of the water")
-                 time.sleep(a)
-                 print(" You pull at the rope and a hatch opens beneath the dirt behind you. ")
-                 time.sleep(a)
-                 print(" you walk up to the hatch and see a pot of gold with a note.")
-                 time.sleep(a)
-                 print(" The note read: ")
-                 time.sleep(a)
-                 print(" Because you did not let the fairy lead you aware deeper into my forest you can keep this pot of gold.")
-                 time.sleep(a)
-                 print(" YOU HAVE WON THE GAME.")
-                 forest = False
-                 break
+                    print(" You head towards the lake as fast as you can.")
+                    time.sleep(a)
+                    print(" You plunge your arm into the glowing water.")
+                    time.sleep(a)
+                    print(" Instantly your arm stops burning and you see a rope at the bottom of the water")
+                    time.sleep(a)
+                    print(" You pull at the rope and a hatch opens beneath the dirt behind you. ")
+                    time.sleep(a)
+                    print(" you walk up to the hatch and see a pot of gold with a note.")
+                    time.sleep(a)
+                    print(" The note read: ")
+                    time.sleep(a)
+                    print(" Because you did not let the fairy lead you aware deeper into my forest you can keep this pot of gold.")
+                    time.sleep(a)
+                    print(" YOU HAVE WON THE GAME.")
+                    time.sleep(a)
+                    print()
+                    time.sleep(a)
+                    print("GAME OVER....")
+                    forest = False
+                    break
 
                 elif answer == "follow":
                     print(" Your curiosity has cost you dearly.")
@@ -325,8 +339,14 @@ elif answer == "forest":
                     print(" Due to your curiosity and disregard for your own injury.")
                     time.sleep(3)
                     print(" You Have Died!!! ")
+                    time.sleep(a)
+                    print()
                     print(" YOU HAVE LOST THE GAME!!")
+                    time.sleep(a)
+                    print()
                     print(" GAME OVER")
+                    time.sleep(a)
+                    print()
 
                     forest = False
                     break
@@ -340,6 +360,7 @@ elif answer == "forest":
                 time.sleep(a)
                 print(" YOU HAVE LOST THE GAME.")
                 time.sleep(a)
+                print()
                 print(" GAME OVER!!!")
 
                 forest = False
@@ -355,14 +376,19 @@ elif answer == "forest":
             print(" YOU HAVE DIED.")
             time.sleep(a)
             print(" YOU HAVE LOST THE GAME!!!")
+            time.sleep(a)
+            print()
             print(" GAME OVER!!!")
             
             forest = False
+            time.sleep(4) 
             break
 
         
         if answer == "quit":
             print(" Thank you starting the journey {}, we do hope you come back and try again.".format(name))
+            time.sleep(a)
+            print()
             forest = False
             break
 
@@ -370,13 +396,15 @@ elif answer == "forest":
         elif answer not in choices_forest:
             print(" That is not a choice. You Lose The Game ")
             forest = False
+            time.sleep(4) 
             continue
 
 elif answer == "quit":
     print(" Thank you starting the journey {}, we do hope you come back and try again.".format(name))
     city = False
     forest = False
-    
+
+    time.sleep(4)   
     
 
 
